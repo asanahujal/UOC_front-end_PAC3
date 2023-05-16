@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Albert Sanahuja Llopis">
+    <meta name="description" content="PAC 3 - Pokedex">
+    <meta name="keywords" content="UOC,PAC 3,Pokedex,JavaScript,HTML,CSS">
+    
+    <title>PAC 3 - Pokedex</title>
+    <link rel="icon" href="css/img/pikachu.png" type="image/png">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="light-theme">
+    <header>
+      <div>
+        <h2>Albert Sanahuja Llopis</h2>
+        <h3>UOC - 2023</h3>
+      </div>
+      <div>
+        <h1>PAC 3 - Pokedex</h1>
+      </div>
+      <div>
+        <h2>Escull el tema!</h2>
+        <div class="theme-buttons">
+          <label for="color-palette-light"><h3>Clar</h3></label>
+          <input type="radio" id="color-palette-light" name="color-palette" value="light"> 
+          <input type="radio" id="color-palette-dark" name="color-palette" value="dark"> 
+          <label for="color-palette-dark"><h3>Fosc</h3></label>
+        </div>
+      </div>
+    </header>
+    <article>
+      <h1>Llistat de Pokemons</h1>
+    </article>
+    <footer>
+      <input type="button" id="btn-load" value="Carregar nous Pokemons">
+    </footer>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <div id="main_info" class="modal-single-pokemon"></div>
+        <div id="caract_info" class="modal-single-pokemon"></div>
+        <span class="close">&times;</span>
+      </div>
+    </div>
+
+    <script defer src="js/poke_manager.js"></script>
+    <script defer src="js/main.js"></script>
+
+  </body>
+</html>
